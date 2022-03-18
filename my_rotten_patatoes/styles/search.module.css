@@ -1,0 +1,55 @@
+.container {
+  position: relative;
+}
+
+.search {
+  border: 1px solid #666;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 18px;
+  width: 100%;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.result {
+  background: #99ddc6;
+  color: black;
+  margin: 0 0 9px;
+  padding: 18px;
+}
+
+.addMovie {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background-color: #4caf50;
+}
+
+.result a {
+  color: #eee;
+}
+
+.genre {
+  display: inline;
+}
+
+.Pre {
+  width: 200px;
+  border: 1px solid;
+  padding: 2px 5px;
+
+  /* Les deux règles suivantes sont nécessaires pour text-overflow */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.titre {
+  text-overflow: ellipsis;
+}
